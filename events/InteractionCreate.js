@@ -39,7 +39,7 @@ client.on('ready', () => {
     client.user.setPresence({
         status: 'dnd',
         activities: [{
-            name: 'dev for krax community',
+            name: 'dev for krax community by mr3r',
             type: 'STREAMING',
             url: 'https://www.twitch.tv/kraxcommunity'
         }]
