@@ -25,9 +25,11 @@ module.exports = {
 
         const user = interaction.options.getUser("user");
         const reason = interaction.options.getString("reason") || "No reason provided";
-        const member = interaction.guild.members.cache.get(user.id);
-
-        if (!member) {
+        
+        let member;
+        try {
+            member = await interaction.guild.members.fetch(user.id);
+        } catch (error) {
             return interaction.reply({ content: "User not found in this server!", ephemeral: true });
         }
 
