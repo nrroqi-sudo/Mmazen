@@ -27,7 +27,7 @@ client.slashCommands = new Collection();
 client.config = require(`${process.cwd()}/config`);
 require("./handler")(client);
 client.prefix = prefix;
-client.login(config.token);
+client.login(process.env.Token || config.token);
 mongoose.connect(config.db)
 .then(() => { console.log("MongoDB Connected ✅"); })
 .catch((err) => { console.error("Failed to connect to MongoDB", err); });
