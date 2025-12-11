@@ -16,7 +16,6 @@ const ms = require(`ms`)
 const Discord = require("discord.js")
 const { prefix, owners } = require(`${process.cwd()}/config`);
 const config = require(`${process.cwd()}/config`);
-const Data = require("pro.db")
 const mongoose = require("mongoose")
 const { createCanvas, registerFont } = require("canvas")
 const canvas = require('canvas')
