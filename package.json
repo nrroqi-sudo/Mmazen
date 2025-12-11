@@ -6,8 +6,10 @@
   "engines": {
     "node": "18.x"
   },
-  "scripts": {
-    "start": "node index.js"
+"scripts": {
+  "start": "node index.js",
+  "build": "bash render-build.sh"
+}
   },
   "author": "",
   "license": "ISC",
