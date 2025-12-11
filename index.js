@@ -203,7 +203,7 @@ client.on("messageCreate", async (message) => {
       return message.reply({
         content: `**❌ - يرجى كتابة الحجم الصحيح.**`,
       });
-    if (!data) {شكلك
+    if (!data) {
       data = await db.create({
         id: message.guild.id,
       });
