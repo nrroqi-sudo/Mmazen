@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "bash render-build.sh"
   },
   "author": "",
   "license": "ISC",
